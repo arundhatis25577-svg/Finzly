@@ -6,7 +6,7 @@
     <title>Finzly - Smart Money Management</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Base Styles */
+        
         * {
             margin: 0;
             padding: 0;
@@ -14,27 +14,13 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        :root {
-            --primary: #2e7d32;
-            --primary-light: #4caf50;
-            --primary-dark: #1b5e20;
-            --secondary: #1565c0;
-            --accent: #ff9800;
-            --text: #333333;
-            --text-light: #666666;
-            --background: #f8f9fa;
-            --card: #ffffff;
-            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            --transition: all 0.3s ease;
-        }
+        
 
         html {
             scroll-behavior: smooth;
         }
 
         body {
-            background-color: var(--background);
-            color: var(--text);
             line-height: 1.6;
             overflow-x: hidden;
         }
@@ -74,32 +60,23 @@
 
         p {
             margin-bottom: 1.5rem;
-            color: var(--text-light);
         }
 
         .btn {
             display: inline-block;
             padding: 12px 28px;
-            background-color: var(--primary);
             color: white;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            transition: var(--transition);
             border: none;
             cursor: pointer;
-            box-shadow: var(--shadow);
         }
 
-        .btn:hover {
-            background-color: var(--primary-dark);
-            transform: translateY(-3px);
-        }
 
         .btn-secondary {
             background-color: transparent;
-            color: var(--primary);
-            border: 2px solid var(--primary);
+            border: 2px solid
         }
 
         .btn-secondary:hover {
@@ -107,21 +84,16 @@
         }
 
         .card {
-            background-color: var(--card);
             border-radius: 16px;
             padding: 24px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
         }
 
         .card:hover {
-            transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
         }
 
-        /* Header Styles */
+        
         header {
-            background-color: var(--card);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
             position: fixed;
             width: 100%;
@@ -141,7 +113,6 @@
             align-items: center;
             font-size: 1.8rem;
             font-weight: 700;
-            color: var(--primary);
             text-decoration: none;
         }
 
@@ -161,25 +132,20 @@
 
         .nav-links a {
             text-decoration: none;
-            color: var(--text);
             font-weight: 500;
-            transition: var(--transition);
         }
 
-        .nav-links a:hover {
-            color: var(--primary);
-        }
+    
 
         .mobile-menu-btn {
             display: none;
             background: none;
             border: none;
             font-size: 1.5rem;
-            color: var(--text);
             cursor: pointer;
         }
 
-        /* Hero Section */
+        
         .hero {
             padding-top: 150px;
             padding-bottom: 100px;
@@ -201,7 +167,6 @@
 
         .hero-text h1 {
             margin-bottom: 1.5rem;
-            color: var(--primary-dark);
         }
 
         .hero-text p {
@@ -277,15 +242,9 @@
             align-items: center;
             justify-content: center;
             margin-right: 15px;
-            color: var(--primary);
         }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
 
-        /* Features Section */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -312,12 +271,10 @@
         }
 
         .feature-card:hover .feature-icon {
-            background-color: var(--primary);
             color: white;
-            transform: scale(1.1);
         }
 
-        /* Stats Section */
+        
         .stats {
             background: linear-gradient(135deg, #2e7d32, #1b5e20);
             color: white;
@@ -347,7 +304,7 @@
             margin-bottom: 10px;
         }
 
-        /* How It Works */
+        
         .steps {
             display: flex;
             justify-content: space-between;
@@ -388,7 +345,7 @@
             box-shadow: var(--shadow);
         }
 
-        /* Testimonials */
+        
         .testimonials {
             background-color: #f5f5f5;
         }
@@ -424,11 +381,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--primary);
             font-size: 1.5rem;
         }
 
-        /* CTA Section */
+        
         .cta {
             text-align: center;
             background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
@@ -444,7 +400,7 @@
             margin: 0 auto 2rem;
         }
 
-        /* Footer */
+        
         footer {
             background-color: #1a1a1a;
             color: white;
@@ -498,13 +454,9 @@
             border-radius: 50%;
             color: white;
             text-decoration: none;
-            transition: var(--transition);
         }
 
-        .social-links a:hover {
-            background-color: var(--primary);
-            transform: translateY(-3px);
-        }
+        
 
         .footer-bottom {
             text-align: center;
@@ -514,7 +466,7 @@
             font-size: 0.9rem;
         }
 
-        /* Responsive Styles */
+        
         @media (max-width: 992px) {
             h1 {
                 font-size: 2.4rem;
@@ -568,7 +520,7 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
+    
     <header>
         <div class="container">
             <nav class="navbar">
@@ -589,7 +541,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -648,7 +600,7 @@
         </div>
     </section>
 
-    <!-- Features Section -->
+    
     <section id="features" class="features">
         <div class="container">
             <h2>Powerful Features for Your Finances</h2>
@@ -685,7 +637,7 @@
         </div>
     </section>
 
-    <!-- Stats Section -->
+   
     <section class="stats">
         <div class="container">
             <h2>Trusted by Millions Worldwide</h2>
@@ -710,7 +662,6 @@
         </div>
     </section>
 
-    <!-- How It Works -->
     <section id="how-it-works" class="how-it-works">
         <div class="container">
             <h2>How FinFlow Works</h2>
@@ -739,7 +690,7 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
+    
     <section id="testimonials" class="testimonials">
         <div class="container">
             <h2>What Our Users Say</h2>
@@ -790,7 +741,7 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
+
     <section class="cta">
         <div class="container">
             <h2>Ready to Take Control of Your Finances?</h2>
@@ -799,7 +750,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    
     <footer>
         <div class="container">
             <div class="footer-content">
